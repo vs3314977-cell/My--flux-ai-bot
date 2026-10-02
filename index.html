@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,14 +13,12 @@
     <h1>Welcome to My AI Assistant</h1>
     <p>Niche right side me chat icon par click karke baat karein!</p>
 
-    <<script src="https://cdn.botpress.cloud/webchat/v3.7/inject.js"></script>
-
+    <!-- Botpress Scripts (Sirf ek baar bina kisi duplicate ke) -->
     <script src="https://cdn.botpress.cloud/webchat/v3.7/inject.js"></script>
     <script src="https://bpcontent.cloud" defer></script>
 
-    
- 
-<script src="https://files.bpcontent.cloud/2026/09/29/08/20260929081436-HK7PMIXO.js" defer></script>   <script>
+    <!-- Chat History Save Karne Ka Code -->
+    <script>
         window.botpress.on('*', (event) => {
             if (event.type === 'webchat:ready') {
                 const savedConversationId = localStorage.getItem('bp_chat_history_id');
@@ -39,4 +38,3 @@
     </script>
 </body>
 </html>
-
